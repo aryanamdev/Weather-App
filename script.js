@@ -1,10 +1,9 @@
 let city = document.getElementById("input");
 let searchBtn = document.getElementById("button");
-let text = document.querySelector(".result>h2");
-let result = document.querySelector(".result");
 
 function getWeather() {
   let cityValue = city.value;
+  let result = document.querySelector(".result");
   console.log(cityValue);
   if (cityValue.length == 0) {
     text.innerHTML = "Mention a city";
@@ -24,7 +23,7 @@ function getWeather() {
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
-        result.innerHTML = `<h1>${cityValue}'s Temperature</h1>
+        result.innerHTML = `<h1>${cityValue}'s gTemperature</h1>
         <div class="weather">
         <h2 class="weather">Temperature </h2>
         <i class="fa-solid fa-temperature-three-quarters"></i>
@@ -41,8 +40,8 @@ function getWeather() {
             <span>${data.wind_speed}</span>
         </div>`;
       })
-      .catch((err) => {
-        result.innerHTML = `<h2> City Not Found <h2>`;
+      .catch(() => {
+        result.innerHTML = `<h2 class="msg">City not found</h2>`;
       });
   }
 }
