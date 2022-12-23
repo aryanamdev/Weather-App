@@ -23,9 +23,9 @@ function getWeather() {
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
-        result.innerHTML = `<h1>${cityValue}'s gTemperature</h1>
+        result.innerHTML = `<h1>${cityValue}'s Temperature</h1>
         <div class="weather">
-        <h2 class="weather">Temperature </h2>
+        <h2 class="weather">Temperature</h2>
         <i class="fa-solid fa-temperature-three-quarters"></i>
         <span class="values temp">${data.temp}°</span>
         </div>
