@@ -95,6 +95,12 @@ li {
   background-color: rgba(183, 202, 238, 0.1);
   backdrop-filter: blur(15px);
 }
+.input-button {
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+  width: 100%;
+}
 
 input,
 button {
@@ -129,27 +135,27 @@ input:focus {
   gap: 2em;
   color: rgb(255, 255, 255);
 }
-.weather{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+.weather {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
-span{
-    color: rgb(251, 251, 251);
-    font-size: 2rem;
-}
-
-h1{
-    font-size: 1.5rem;
-    color: rgb(208, 208, 208);
-    font-weight: bold;
-}
-h2{
-    font-size: 1rem;
-    font-weight: 600;
-    color: rgb(180, 180, 180);
-    font-weight: 700;
+span {
+  color: rgb(255, 242, 0);
+  font-size: 2rem;
+  
 }
 
-
+h1 {
+  font-size: 1.5rem;
+  color: rgb(208, 208, 208);
+  font-weight: bold;
+}
+h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(180, 180, 180);
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}

@@ -32,7 +32,7 @@ function getWeather() {
         </div>
         <div class="weather">
             <h2 class="values humidity">Humidity </h2>
-            <i class="fa-sharp fa-solid fa-droplet-percentage"></i>
+            <i class="fa-solid fa-droplet"></i>
             <span class="values ">${data.humidity}</span>
         </div>
         <div class="weather">
@@ -41,9 +41,11 @@ function getWeather() {
             <span>${data.wind_speed}</span>
         </div>`;
       })
-      .catch((err) => console.error(err));
+      .catch((err) => {
+        result.innerHTML = `<h2> City Not Found <h2>`;
+      });
   }
 }
 
 searchBtn.addEventListener("click", getWeather);
-searchBtn.addEventListener("load", getWeather);
+window.addEventListener("load", getWeather);
