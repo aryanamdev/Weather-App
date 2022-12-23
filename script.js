@@ -26,15 +26,18 @@ function getWeather() {
         console.log(data);
         result.innerHTML = `<h1>${cityValue}'s Temperature</h1>
         <div class="weather">
-            <h2 class="weather">Temperature <i class="fa-solid fa-temperature-three-quarters"></i></h2>
-            <span class="values temp">${data.temp} Degrees</span>
+        <h2 class="weather">Temperature </h2>
+        <i class="fa-solid fa-temperature-three-quarters"></i>
+        <span class="values temp">${data.temp}°</span>
         </div>
         <div class="weather">
-            <h2 class="values humidity">Humidity</h2>
+            <h2 class="values humidity">Humidity </h2>
+            <i class="fa-sharp fa-solid fa-droplet-percentage"></i>
             <span class="values ">${data.humidity}</span>
         </div>
         <div class="weather">
             <h2 class="values Wind Speed">Wind Speed</h2>
+            <i class="fa-sharp fa-solid fa-wind"></i>
             <span>${data.wind_speed}</span>
         </div>`;
       })
@@ -43,3 +46,4 @@ function getWeather() {
 }
 
 searchBtn.addEventListener("click", getWeather);
+searchBtn.addEventListener("load", getWeather);

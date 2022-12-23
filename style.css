@@ -126,7 +126,7 @@ input:focus {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 3em;
+  gap: 2em;
   color: rgb(255, 255, 255);
 }
 .weather{
@@ -136,13 +136,20 @@ input:focus {
     align-items: center;
 }
 span{
-    color: rgb(188, 188, 188);
+    color: rgb(251, 251, 251);
+    font-size: 2rem;
 }
 
 h1{
-    font-size: 1rem;
-    color: rgb(181, 181, 181);
+    font-size: 1.5rem;
+    color: rgb(208, 208, 208);
     font-weight: bold;
+}
+h2{
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(180, 180, 180);
+    font-weight: 700;
 }
 
 
