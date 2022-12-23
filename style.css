@@ -21,7 +21,7 @@
 html,
 body {
   height: 100%;
-  font-family: Raleway;
+  font-family: "Poppins";
 }
 /*
     Typographic tweaks!
@@ -134,6 +134,7 @@ input:focus {
   justify-content: center;
   gap: 1em;
   color: rgb(255, 255, 255);
+  /* background-color: #fff; */
 }
 .weather {
   display: flex;
@@ -144,7 +145,6 @@ input:focus {
 span {
   color: rgb(255, 242, 0);
   font-size: 2rem;
-  
 }
 
 h1 {
@@ -153,9 +153,18 @@ h1 {
   font-weight: bold;
 }
 h2 {
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 600;
   color: rgb(180, 180, 180);
   font-weight: 700;
   margin-bottom: 0.5em;
+}
+.weather {
+  background-color: rgba(255, 243, 163, 0.102);
+  padding: 0.3em;
+  border-radius: 10px;
+  backdrop-filter: blur(30px);
+  text-align: center;
+  height: 130px;
+  width: 100%;
 }
