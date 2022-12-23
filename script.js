@@ -15,7 +15,7 @@ function getWeather() {
         "X-RapidAPI-Host": "weather-by-api-ninjas.p.rapidapi.com",
       },
     };
-
+    result.innerHTML = `<h1>Loading ${cityValue}'s Weather...</h1>`;
     fetch(
       `https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=${cityValue}`,
       options
